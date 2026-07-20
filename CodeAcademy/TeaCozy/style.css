@@ -7,7 +7,8 @@ html, body{
     opacity: 0.9;
     text-align: center;
     scroll-behavior: smooth;
-}
+    
+}html {background-color: #fff;}
 
 
 img {
@@ -18,10 +19,10 @@ img {
 
 /* header */
 header {
-    height: 69px;
+    height: 3em;
     border-bottom: 1px solid seashell;
     /* width: 100%; */
-    padding: 0px 10px ;
+    padding: 0px 0.6em ;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -32,26 +33,31 @@ header {
 }
 
 header *{
-    display: inline;
+    /* display: inline; */
     color: inherit;
     padding: 0;
 
 }
 
-header li {
-    margin-left: 10px;
+header ul {
+    display: inline-flex;
     
 }
 
+header li {
+    list-style: none;
+    /* flex: 2 2 100px; */
+}
+
 header a{
-    padding: calc((68px - 24px)/2) 12px;
+    padding: calc((3em - 1.2em)/2) 0.6em;
 }
 
 header a:hover {
     background-color: #111;
 }
-/* 
-header a:active {
+ 
+/*header a:active {
     transition: ease-in-out;
     animation: flash 700ms 300ms;
 } */
@@ -170,6 +176,7 @@ section#locations {
 /* footer */
 footer {
     height: 200px;
+    
 }
 
 
